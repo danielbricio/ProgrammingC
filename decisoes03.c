@@ -11,8 +11,8 @@
 		if(num > 0){
 			printf("POSITIVO");
 		}else{
-			printf("NEGATIVO");
-		}
+				printf("NEGATIVO");
+			}
 		
 		return 0;
 	}
