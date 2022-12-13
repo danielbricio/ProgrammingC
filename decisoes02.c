@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <locale.h>
 
+/* desvio condicional simples, informa se um numero é positivo*/
+
 	int main(){
 		
 		setlocale(LC_ALL, "Portuguese");

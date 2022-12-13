@@ -3,23 +3,22 @@
 
 	int main(){
 		
-		setlocale(LC_ALL, "Portuguese");
+		setlocale(LC_ALL,"Portuguese");
 		
-		int receita, despesa, lucro, preju;
+		float receita, despesa;
 		
 		printf("Receita: ");
-		scanf("%d", &receita);
+		scanf("%f", &receita);
 		
 		printf("Despesa: ");
-		scanf("%d", &despesa);
+		scanf("%f", &despesa);
 		
 		if(receita > despesa){
-			
 			printf("LUCRO");
+			
 		}else{
 			printf("PREJU");
 		}
-		
 		
 		return 0;
 	}

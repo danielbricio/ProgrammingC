@@ -1,24 +1,25 @@
 #include <stdio.h>
+#include <locale.h>
 
 	int main(){
 		
-		float n1, n2, nz;
+		setlocale(LC_ALL, "Portuguese");
+		
+		float valorA, valorB, dividirMaior;
 		
 		printf("Primeiro numero? ");
-		scanf("%f", &n1);
+		scanf("%f", &valorA);
 		
 		printf("Segundo numero? ");
-		scanf("%f", &n2);
+		scanf("%f", &valorB);
 		
-		if( n1 > n2){
-			nz = n1/n2;
-			printf("o resultado eh %f", nz);
+		if( valorA > valorB){
+			dividirMaior = valorA/valorB;
 		}else{
-			nz = n2/n1;
-			
+			dividirMaior = valorB/valorA;
 		}
 		
-		printf("o rsss eh %f", nz);
+		printf("\n A divisão do maior pelo menor é %.2f", dividirMaior);
 		
 		
 		

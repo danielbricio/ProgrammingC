@@ -5,27 +5,32 @@
 		
 		setlocale(LC_ALL, "Portuguese");
 		
-		float sal, tax, nsal;
+		float salarioBruto, taxaINSS, descontoINSS, salarioLiquido;
 		
-		printf("\tDigite o salário: ");
-		scanf("%f", &sal);
+		printf("\tDigite o Salário Bruto: ");
+		scanf("%f", &salarioBruto);
 		
-		if(sal <= 1317.07){
-			tax = 8;
-		}else if(sal <= 2195.12){
-			tax = 9;
+		if(salarioBruto <= 1317.07){
+			taxaINSS = 8;
+		}else if(salarioBruto <= 2195.12){
+			taxaINSS = 9;
 		}else{
-			tax = 11;
+			taxaINSS = 11;
 		}
 		
-		nsal = (sal * (tax/100));
-		sal = sal - nsal;
 		
-		printf("Salário velho.......: R$ %.2f \n", sal);
+		descontoINSS = salarioBruto * (taxaINSS / 100);
 		
-		printf("Taxa................: %.2f%%\n\n", tax);
+		salarioLiquido = salarioBruto - descontoINSS;
 		
-		printf("Desconto com taxa..........: R$ %.2f \n", nsal);
+		
+		printf("\nSalário Bruto.............: R$ %.2f \n", salarioBruto);
+	
+		printf("Taxa do INSS..............: %.2f%%\n\n", taxaINSS);
+		
+		printf("Desconto do INSS..........: R$ %.2f \n", descontoINSS);
+		
+		printf("\n\n\nSalario Liquido...........: R$ %.2f \n", salarioLiquido);
 		
 		return 0;
 	}

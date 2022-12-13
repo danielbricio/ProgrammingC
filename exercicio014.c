@@ -15,9 +15,9 @@
 		
 		if(n1 > n2){
 			
-			printf("Numero %d", n1);
+			printf("O Maior valor é  %d", n1);
 		}else{
-			printf("Numero %d", n2);
+			printf("O Maior valor é  %d", n2);
 		}
 		
 		
