@@ -26,32 +26,38 @@
 			switch (codigo){
 				
 				case 0:
-					printf("Encerrando o Programa!");
+					printf("Encerrando o Programa! \n");
 					break;
 					
 			 	case 1:
-			 		printf("Colando PANELA");
+			 		printf("Colando PANELA \n");
+			 		contPan++;
 			 		break;
 	
 			 	case 2:
-			 		printf("Colando CHALEIRA");
+			 		printf("Colando CHALEIRA \n");
+			 		contCha++;
 			 		break;
 			 		
 			 	case 3:
-			 		printf("Colando VASSOURA");
+			 		printf("Colando VASSOURA\n");
+			 		contVas++;
 			 		break;
 				
 				case 4:
-					printf("PRODUTOS COLOCADO");
+					printf("PRODUTOS COLOCADO\n");
+					printf("%d Panelas no estoque \n", contPan);
+					printf("%d Chaleira no estoque \n", contCha);
+					printf("%d Vassoura no estoque \n", contVas);
 			 		break;
 					 			 		
 			 		default:
-			 			printf("Opção Inválida");
+			 			printf("Opção Inválida\n");
 			 			break;
 			 			
-			 	system("pause");
+			 
 			 }
-			
+				system("pause");
 						
 		}while (codigo != 0);
 		
