@@ -24,44 +24,47 @@
 			printf("Escolha uma opção \n");
 			scanf("%d", &codigo);
 			
-			switch(codigo)
-			{
-				case 0:
-					printf(" Encerrando o Programa \n");
-					break;
-				case 1:
-					printf(" incluindo unidade \n");
-					totEnt++;
-					disponivel++;
-					break;
-				case 2:
-					printf(" excluindo  Unidade \n");
-					totSai++;
-					disponivel--;
-					break;
-				case 3:
-					printf(" Mostrando Disponivel no estoque \n");
-					printf("Disponivel no estoque: %d \n", disponivel);
-					break;
-				case 4:
-					printf(" Mostrando total de entradas no estoque \n");
-					printf("entradas no estoque: %d \n", totEnt);
-					break;
-				case 5:
-					printf("Mostrando total de saidas no estoque \n");
-					break;
+				switch(codigo)
+					{
+						case 0:
+							printf(" Encerrando o Programa \n");
+							break;
+						case 1:
+							printf(" incluindo unidade \n");
+							totEnt++;
+							disponivel++;
+							break;
+						case 2:
+							
+							if(disponivel == 0){
+								printf("estoque está vazio\n");
+							}else{
+								
+							printf(" excluindo  Unidade \n");
+							totSai++;
+							disponivel--;
+							}
+							
+							break;
+						case 3:
+							printf(" Mostrando Disponivel no estoque \n");
+							printf("Disponivel no estoque: %d \n", disponivel);
+							break;
+						case 4:
+							printf(" Mostrando total de entradas no estoque \n");
+							printf("entradas no estoque: %d \n", totEnt);
+							break;
+						case 5:
+							printf("Mostrando total de saidas no estoque \n");
+							break;
+							
+							default: printf("Escolheu uma opção inválida \n");
+							printf("saidas no estoque: %d \n", totSai);
+							break;
 					
-					default: printf("Escolheu uma opção inválida \n");
-					printf("saidas no estoque: %d \n", totSai);
-					break;
-			
+					}system("pause");
+					
 			}while (codigo !=0);
-		
-			
-					
-				
-			}
-			system("pause");
 	
 		
 		return 0;
