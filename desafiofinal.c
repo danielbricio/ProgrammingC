@@ -32,7 +32,7 @@
 		
 		if(consumo > 30){
 			
-			quantidade = consumo - 100;
+			quantidade = consumo - 30;
 			
 			consumo = consumo - quantidade; // consumo =- quantidade;
 			
@@ -42,7 +42,7 @@
 		
 		if(consumo > 10){
 			
-			quantidade = consumo - 100;
+			quantidade = consumo - 10;
 			
 			consumo = consumo - quantidade; // consumo =- quantidade;
 			
